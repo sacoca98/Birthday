@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feliz Cumpleaños 💕💞</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family-Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="Images/Logo_wb.png"  type="image/jpg">
+</head>
+
+<body>
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="typewriter" id="typewriter"> Feliz Cumpleaños, Hermosa! 💕💕</h1>
+            <p class="subtitle fade-in"> Hoy es para celebrarte a ti y recordar la dicha que traes a todos los que te rodean.</p>
+            <div class="floating-hearts">
+                <div class="heart">❤</div>
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">❤</div>
+            </div>        
+            <button class="cta-button" onclick="scrollToSection('gallery')">
+            Empecemos 🎉🥳
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+     <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Nuestros Maravillosos Recuerdos</h2>
+            <div class="gallery-grid">
+                <div class="photo-card" data-aos="fade-up" data-delay="100">
+                    <div class="photo-container">
+                        <img src="Images/Foto_1.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> La noche de nuestro primer beso 💋</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="200">
+                    <div class="photo-container">
+                        <img src="Images/Foto_2.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> Cuando conocí la fuente de tu amabilidad e inspiración 💡</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="300">
+                    <div class="photo-container">
+                        <img src="Images/Foto_3.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> Luciendo la imagen de nuestro idolo 🪗</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="400">
+                    <div class="photo-container">
+                        <img src="Images/Foto_4.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> Mini tú! Preciosa pero con muchos novios 😵💔</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="500">
+                    <div class="photo-container">
+                        <img src="Images/Foto_5.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> La noche que nos volvimos lokos 🍹</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="600">
+                    <div class="photo-container">
+                        <img src="Images/Foto_6.jpg" 
+                        alt="A">
+                        <div class="photo-overlay">
+                            <div class="photo-caption"> El mejor 🍑 de Bogotá, no hay discusión 🤯</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="imageModal">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <div class="modal-content">
+                <img id="modalImage" src="" alt="Imagen ampliada">
+                <p class="modal-description" id="modalDescription"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="message-card">
+                <h2 class="message-title">Un Mensaje Especial Para Ti 💗</h2>
+                <div class="message-content">
+                    <p class="message-text fade-in-text">
+                        En este día especial, quiero que sepas de lo agradecido que estoy con Dios y a la vida por haberte
+                        puesto en mi camino. Tu risa, tu brillo, tu amabilidad y tu forma de ser llenan mis días de alegría,
+                        me das fuerza y tu presencia mejora todo a mi alrededor. 
+                    </p>
+                    <p class="message-text fade-in-text">
+                        Hoy tenemos el privilegio de celebrarte, compartir un año más con tu maravilloso ser - tu belleza, tu
+                        humor, tu perspicacia y todas las cosas que te hacen única e irrepetible. Espero que este año te traiga
+                        infinita felicidad, un sifin de nuevas experiencias, y que estes más cerca de cumplir todos tus sueños.
+                    </p>
+                    <p class="message-signature fade-in-text">
+                        Feliz Cumpleaños preciosa! Espero podamos compartir muchos más años de risas, amor y memorías construidas juntos 💕
+                    </p>    
+                </div>
+                <div class="message-hearts">
+                    <span class="heart-animation">💖</span>
+                    <span class="heart-animation">💕</span>
+                    <span class="heart-animation">💗</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Hecho con 💗 para celebrar tu día!</p>
+        </div>
+    </footer>
+
+    <audio id="bg-music" loop>
+        <source src="Music/Avicii - Waiting For Love (Karaoke Version) - PARTY TYME KARAOKE CHANNEL.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
