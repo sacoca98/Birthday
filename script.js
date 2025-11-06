@@ -140,7 +140,7 @@ window.addEventListener('scroll', () => {
     const parallaxSpeed = 0.5;
 
     if (hero) {
-        hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+        hero.style.transform = `translateY(${scrolled * speed}px)`;
     }
 
     //Update particles position based on scroll
@@ -327,3 +327,4 @@ photoStyle.textContent = `
 `;
 
 document.head.appendChild(photoStyle);
+
