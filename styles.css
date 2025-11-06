@@ -58,7 +58,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -87,7 +87,7 @@ body {
     color: #8b3a3a;
     margin-bottom: 20px;
     white-space: nowrap;
-    overflow: visible;
+    overflow: hidden;
     border-right: 3px solid #8b3a3a;
     animation: typewriter 4s steps(26) 1s forwards, blink 1s infinite;
     width: 0;
@@ -619,4 +619,5 @@ body {
     font-size: 0.9rem;
   }
 }
+
 
