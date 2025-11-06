@@ -577,30 +577,45 @@ body {
 }
 
 @media (max-width: 768px) {
-  .title-text, 
-  .birthday-title, 
-  .intro-text {
-    font-size: 1.5rem !important; /* reduce tamaño */
+  .hero {
+    padding: 100px 20px 60px 20px; /* espacio interno */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .hero h1,
+  .hero .typewriter {
+    font-size: 1.8rem !important; 
     line-height: 1.3;
     text-align: center;
-    padding: 0 15px;
-    margin: 0 auto;
-    word-wrap: break-word;
+    white-space: normal !important;
+    overflow: visible;
+    display: block;
+    margin-bottom: 15px;
   }
 
-  .intro-section {
-    padding-top: 100px; 
+  .hero .subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 10px;
     text-align: center;
   }
+}
 
-  .birthday-title {
-    white-space: normal; 
-    overflow: visible;
-    font-size: 2rem !important;
+/* Extra: teléfonos muy pequeños (menos de 480px de ancho) */
+@media (max-width: 480px) {
+  .hero h1,
+  .hero .typewriter {
+    font-size: 1.5rem !important;
   }
 
-  .intro-section, .birthday-title, .intro-text {
-    position: relative;
-    z-index: 5;
+  .hero .subtitle {
+    font-size: 0.9rem;
   }
 }
