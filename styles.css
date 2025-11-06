@@ -530,6 +530,22 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .hero {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .hero .typewriter {
+    font-size: 1.8rem;
+    white-space: normal; /* permite saltos de línea */
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+    
     .typerwriter {
         white-space: normal;
         border-right: none;
@@ -575,3 +591,4 @@ body {
         margin-bottom: 40px;
     }
 }
+
